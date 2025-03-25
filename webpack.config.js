@@ -1,4 +1,4 @@
-const taskNumber = '';
+const taskNumber = '04';
 //numer przerabianego zadania
 
 const path = require('path');
@@ -6,6 +6,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // importuję odpowiedni plugin
 module.exports = {
+    dependencies: [
+        path.join(__dirname, "node_modules")
+    ],
     entry: `./${taskNumber}/app.js`,
     // definiuję plik wejściowy
     output: {
